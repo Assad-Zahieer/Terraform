@@ -9,13 +9,12 @@
 - Data Sources = fetch data from outside config
 
 # Interpolation
-##variables
-${var.name}
-e.g. 
-variable "image_id" {
-  default = "debian-cloud/debian-8"
-}
-ami = var.image_id
+## variables  
+${var.name}  
+e.g. variable "image_id" {  
+  default = "debian-cloud/debian-8"  
+}  
+ami = var.image_id  
 
 ## map key value
 ${var.name["key"]}
