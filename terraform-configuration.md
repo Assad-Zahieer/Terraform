@@ -30,7 +30,6 @@ $var.name.attributes
 ${data.type.name.attributes}
 
 # conditionals
-${condition ? true_expression : false_expression}
-e.g
-machine_type = ${var.env == "production" ? "n1-highmem-64" : "n1-standard-1"}
+${condition ? true_expression : false_expression}  
+e.g machine_type = ${var.env == "production" ? "n1-highmem-64" : "n1-standard-1"}
 // if machine is production is hgh memory if not use standard
