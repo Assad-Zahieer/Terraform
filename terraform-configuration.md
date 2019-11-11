@@ -17,19 +17,19 @@ variable "image_id" {
 }
 ami = var.image_id
 
-##map key value
+## map key value
 ${var.name["key"]}
 
-##list index value
+## list index value
 ${var.name[index]}
 
-##resource attributes
+## resource attributes
 $var.name.attributes
 
-##data sources
+## data sources
 ${data.type.name.attributes}
 
-#conditionals
+# conditionals
 ${condition ? true_expression : false_expression}
 e.g
 machine_type = ${var.env == "production" ? "n1-highmem-64" : "n1-standard-1"}
